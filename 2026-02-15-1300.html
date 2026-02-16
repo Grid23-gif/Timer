@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Timer from 6 PM · 6 December 2025</title>
+  <title>Timer from 1 PM · 15 February 2026</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     :root {
@@ -36,7 +35,7 @@
 </head>
 <body>
   <div class="box">
-    <h1>Elapsed Time Since 6 PM · 6 December 2025</h1>
+    <h1>Elapsed Time Since 1 PM · 15 February 2026</h1>
     <div class="subtitle">Days · Hours · Minutes · Seconds (updates every second)</div>
 
     <div class="grid">
@@ -50,9 +49,9 @@
   </div>
 
   <script>
-    // Fixed start: 6 December 2025 at 18:00:00 local time
-    // JS Date months are 0-based (December = 11)
-    const start = new Date(2025, 11, 6, 18, 0, 0, 0);
+    // Fixed start: 15 February 2026 at 13:00:00 local time
+    // JS Date months are 0-based (February = 1)
+    const start = new Date(2026, 1, 15, 13, 0, 0, 0);
 
     // Show localized start time
     document.getElementById('startText').textContent = start.toLocaleString(undefined, {
@@ -89,3 +88,4 @@
   </script>
 </body>
 </html>
+``
