@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Timer from 1 PM · 15 February 2026</title>
+  <title>Timer from 6 PM · 2 March 2026</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     :root {
@@ -35,57 +35,4 @@
 </head>
 <body>
   <div class="box">
-    <h1>Elapsed Time Since 1 PM · 15 February 2026</h1>
-    <div class="subtitle">Days · Hours · Minutes · Seconds (updates every second)</div>
-
-    <div class="grid">
-      <div class="unit"><div class="label">Days</div><div class="value" id="days">0</div></div>
-      <div class="unit"><div class="label">Hours</div><div class="value" id="hours">00</div></div>
-      <div class="unit"><div class="label">Minutes</div><div class="value" id="minutes">00</div></div>
-      <div class="unit"><div class="label">Seconds</div><div class="value" id="seconds">00</div></div>
-    </div>
-
-    <div class="footer">Start: <span class="accent" id="startText"></span></div>
-  </div>
-
-  <script>
-    // Fixed start: 15 February 2026 at 13:00:00 local time
-    // JS Date months are 0-based (February = 1)
-    const start = new Date(2026, 1, 15, 13, 0, 0, 0);
-
-    // Show localized start time
-    document.getElementById('startText').textContent = start.toLocaleString(undefined, {
-      year: 'numeric', month: 'long', day: '2-digit',
-      hour: '2-digit', minute: '2-digit', second: '2-digit'
-    });
-
-    const el = {
-      days: document.getElementById('days'),
-      hours: document.getElementById('hours'),
-      minutes: document.getElementById('minutes'),
-      seconds: document.getElementById('seconds')
-    };
-
-    function update() {
-      const now = new Date();
-      let ms = now - start;
-      if (ms < 0) ms = 0; // safeguard if opened before start
-
-      const totalSeconds = Math.floor(ms / 1000);
-      const days = Math.floor(totalSeconds / 86400);
-      const hours = Math.floor((totalSeconds % 86400) / 3600);
-      const minutes = Math.floor((totalSeconds % 3600) / 60);
-      const seconds = totalSeconds % 60;
-
-      el.days.textContent = String(days);
-      el.hours.textContent = String(hours).padStart(2, '0');
-      el.minutes.textContent = String(minutes).padStart(2, '0');
-      el.seconds.textContent = String(seconds).padStart(2, '0');
-    }
-
-    update();
-    setInterval(update, 1000);
-  </script>
-</body>
-</html>
-``
+    <h1>Elapsed Time Since 6 PM · 2 March 2026</h1>
